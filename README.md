@@ -12,7 +12,11 @@ The aim of AfterParty is to provide city planners, event organizers, and public 
 
 ## Key Features
 - **Predictive Analysis**: Utilises a machine learning model to analyze historical data and predict changes in city dynamics during major events.
-**Interactive Data Visualisation**: Implements MapBox for dynamic visualizations, offering users a clear representation of predicted event impacts on Manhattan.
-**Responsive UI**: A user-friendly interface developed with React.js, ensuring accessibility and ease of use.
-**Efficient Data Management**: Node.js and SQLite are used for robust backend data handling, supporting the processing of large datasets with quick response times.
-**API Integration**: Custom-built RESTful APIs facilitate efficient data retrieval and management, ensuring seamless communication between the front-end and back-end.
+- **Interactive Data Visualisation**: Implements MapBox for dynamic visualizations, offering users a clear representation of predicted event impacts on Manhattan.
+- **Responsive UI**: A user-friendly interface developed with React.js, ensuring accessibility and ease of use.
+- **Efficient Data Management**: Node.js and SQLite are used for robust backend data handling, supporting the processing of large datasets with quick response times.
+- **API Integration**: Custom-built RESTful APIs facilitate efficient data retrieval and management, ensuring seamless communication between the front-end and back-end.
+
+
+https://github.com/harryocleirigh/COMP47360-Research-Practicum/assets/91558668/c613c431-9472-474c-9694-d796542c2c3e
+
