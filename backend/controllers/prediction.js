@@ -13,7 +13,7 @@ const current = (req, res, next) => {
     res.req.ip //sets the object
     generalLogger.info(`current prediction requested`)
 
-    const uri = `${process.env.FLASK_API_URL}/prediction/current?key=${process.env.FLASK_API_KEY}` 
+    const uri = `${process.env.FLASK_API_URL}/prediction/current?key=${process.env.FLASK_API_KEY}` || "http://machinelearning:5000/prediction/current?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZGV2ZWxvcGVyMTAifQ.sfRyA5cBRCPx_YHbdpnfPnWvq8WNV03OLUnKv8GdZNw"
 
     axios.get(uri)
       // Fetch OK

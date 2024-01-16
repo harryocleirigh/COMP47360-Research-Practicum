@@ -1,0 +1,23 @@
+version: '3'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    networks:
+      - afterparty
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+    networks:
+      - afterparty
+  machinelearning:
+    build: ./machinelearning
+    ports:
+      - "5000:4000"
+    networks:
+      - afterparty
+networks:
+  afterparty:
+    driver: bridge  
