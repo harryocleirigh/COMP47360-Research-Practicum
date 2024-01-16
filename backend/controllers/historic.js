@@ -18,7 +18,7 @@ const eventImpact = (req, res, next) => {
   let eventID = req.params.event
   generalLogger.info(`impact requested for event: ${eventID}`)
 
-  const uri = `${process.env.FLASK_API_URL}/historic/${eventID}/impact?key=${process.env.FLASK_API_KEY}` || `http://machinelearning:5000/historic/${eventID}/impact?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZGV2ZWxvcGVyMTAifQ.sfRyA5cBRCPx_YHbdpnfPnWvq8WNV03OLUnKv8GdZNw`
+  const uri = `${process.env.FLASK_API_URL}/historic/${eventID}/impact?key=${process.env.FLASK_API_KEY}` || `http://54.229.14.127:5000/historic/${eventID}/impact?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZGV2ZWxvcGVyMTAifQ.sfRyA5cBRCPx_YHbdpnfPnWvq8WNV03OLUnKv8GdZNw`
   axios.get(uri)
     // Fetch OK
     .then(response => {
@@ -54,7 +54,7 @@ const eventBaseline = (req, res, next) => {
   let eventID = req.params.event
   generalLogger.info(`baseline requested for event: ${eventID}`)
 
-  const uri = `${process.env.FLASK_API_URL}/historic/${eventID}/baseline?key=${process.env.FLASK_API_KEY}` || `http://machinelearning:5000/historic/${eventID}/baseline?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZGV2ZWxvcGVyMTAifQ.sfRyA5cBRCPx_YHbdpnfPnWvq8WNV03OLUnKv8GdZNw`
+  const uri = `${process.env.FLASK_API_URL}/historic/${eventID}/baseline?key=${process.env.FLASK_API_KEY}` || `http://54.229.14.127:5000/historic/${eventID}/baseline?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZGV2ZWxvcGVyMTAifQ.sfRyA5cBRCPx_YHbdpnfPnWvq8WNV03OLUnKv8GdZNw`
 
   axios.get(uri)
     // Fetch OK
@@ -91,7 +91,7 @@ const eventComparison = (req, res, next) => {
   let eventID = req.params.event
   generalLogger.info(`comparison requested for event: ${eventID}`)
   
-  const uri = `${process.env.FLASK_API_URL}/historic/${eventID}/comparison?key=${process.env.FLASK_API_KEY}` || `http://machinelearning:5000/historic/${eventID}/comparison?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZGV2ZWxvcGVyMTAifQ.sfRyA5cBRCPx_YHbdpnfPnWvq8WNV03OLUnKv8GdZNw`
+  const uri = `${process.env.FLASK_API_URL}/historic/${eventID}/comparison?key=${process.env.FLASK_API_KEY}` || `http://54.229.14.127:5000/historic/${eventID}/comparison?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZGV2ZWxvcGVyMTAifQ.sfRyA5cBRCPx_YHbdpnfPnWvq8WNV03OLUnKv8GdZNw`
   
   axios.get(uri)
     // Fetch OK
@@ -127,7 +127,7 @@ const eventTimelapseImpact = (req, res, next) => {
   let eventID = req.params.event
   generalLogger.info(`impact timelapse requested for event: ${eventID}`)
 
-  const uri = `${process.env.FLASK_API_URL}/historic/${eventID}/timelapse/impact?key=${process.env.FLASK_API_KEY}` || `http://machinelearning:5000/historic/${eventID}/timelapse/impact?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZGV2ZWxvcGVyMTAifQ.sfRyA5cBRCPx_YHbdpnfPnWvq8WNV03OLUnKv8GdZNw`
+  const uri = `${process.env.FLASK_API_URL}/historic/${eventID}/timelapse/impact?key=${process.env.FLASK_API_KEY}` || `http://54.229.14.127:5000/historic/${eventID}/timelapse/impact?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZGV2ZWxvcGVyMTAifQ.sfRyA5cBRCPx_YHbdpnfPnWvq8WNV03OLUnKv8GdZNw`
 
   axios.get(uri)
     // Fetch OK
@@ -163,7 +163,7 @@ const eventTimelapseBaseline = (req, res, next) => {
   let eventID = req.params.event
   generalLogger.info(`baseline timelapse requested for event: ${eventID}`)
 
-  const uri = `${process.env.FLASK_API_URL}/historic/${eventID}/timelapse/baseline?key=${process.env.FLASK_API_KEY}` || `http://machinelearning:5000/historic/${eventID}/timelapse/baseline?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZGV2ZWxvcGVyMTAifQ.sfRyA5cBRCPx_YHbdpnfPnWvq8WNV03OLUnKv8GdZNw`
+  const uri = `${process.env.FLASK_API_URL}/historic/${eventID}/timelapse/baseline?key=${process.env.FLASK_API_KEY}` || `http://54.229.14.127:5000/historic/${eventID}/timelapse/baseline?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZGV2ZWxvcGVyMTAifQ.sfRyA5cBRCPx_YHbdpnfPnWvq8WNV03OLUnKv8GdZNw`
 
   axios.get(uri)
     // Fetch OK
