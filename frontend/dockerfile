@@ -2,7 +2,7 @@ FROM node:18 as build
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
-COPY . .n
+COPY . .
 ENV NODE_ENV production
 RUN npm run build
 FROM nginx:alpine
