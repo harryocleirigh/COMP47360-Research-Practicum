@@ -17,7 +17,6 @@ sudo add-apt-repository \
 sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 sudo usermod -aG docker $USER
-sudo newgrp docker
 sudo snap install docker
 sudo chmod 666 /var/run/docker.sock
 sudo snap refresh docker --channel=latest/edge
