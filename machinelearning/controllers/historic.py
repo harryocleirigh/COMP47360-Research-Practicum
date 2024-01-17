@@ -45,31 +45,31 @@ def event_baseline(eventID):
     return baseline_filtered, 200
 
 
+# @cache.memoize(timeout=0)
+# def event_timelapse_impact(eventID):
+#     """
+#     Controller for: HISTORIC/EVENT/TIMELAPSE/IMPACT\n
+#     Returns event timelaspse for 24hr period
+#     """
+#     general_logger.info(f"event impact timelapse queried for event: {eventID}")
+#     eventID = int(eventID)
+#     timelapse_filtered = event_filter(load_file("static/PredictedImpact.json"), int(eventID))
+#     return json.dumps(timelapse_filtered), 200
+
+# @cache.memoize(timeout=0)
+# def event_baselinetimelapse(eventID):
+#     """
+#     Controller for: HISTORIC/EVENT/TIMELINE\n
+#     Returns event timelaspse for 24hr period
+#     """
+#     general_logger.info(f"event baseline timelapse queried for event: {eventID}")
+#     eventID = int(eventID)
+#     timelapse_filtered = event_filter(load_file("static/PredictedBaseline.json"), int(eventID))
+#     return json.dumps(timelapse_filtered), 200
+
+
 @cache.memoize(timeout=0)
 def event_timelapse_impact(eventID):
-    """
-    Controller for: HISTORIC/EVENT/TIMELAPSE/IMPACT\n
-    Returns event timelaspse for 24hr period
-    """
-    general_logger.info(f"event impact timelapse queried for event: {eventID}")
-    eventID = int(eventID)
-    timelapse_filtered = event_filter(load_file("static/PredictedImpact.json"), int(eventID))
-    return json.dumps(timelapse_filtered), 200
-
-@cache.memoize(timeout=0)
-def event_baselinetimelapse(eventID):
-    """
-    Controller for: HISTORIC/EVENT/TIMELINE\n
-    Returns event timelaspse for 24hr period
-    """
-    general_logger.info(f"event baseline timelapse queried for event: {eventID}")
-    eventID = int(eventID)
-    timelapse_filtered = event_filter(load_file("static/PredictedBaseline.json"), int(eventID))
-    return json.dumps(timelapse_filtered), 200
-
-
-@cache.memoize(timeout=0)
-def event_comparison(eventID):
     """
     Controller for: HISTORIC/EVENT/COMPARISON\n
     Returns difference between event impact and baseline for 24hr period

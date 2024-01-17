@@ -19,4 +19,3 @@ The aim of AfterParty is to provide city planners, event organizers, and public 
 
 
 https://github.com/harryocleirigh/COMP47360-Research-Practicum/assets/91558668/c613c431-9472-474c-9694-d796542c2c3e
-
