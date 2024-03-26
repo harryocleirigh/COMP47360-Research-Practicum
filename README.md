@@ -5,9 +5,9 @@ AfterParty is an advanced event impact analysis tool designed to predict the eff
 ## Project Aim
 The aim of AfterParty is to provide city planners, event organizers, and public authorities, and citizens alike, with a tool that helps in understanding and planning for the impact of large-scale events on urban mobility and busyness.
 
-## Technical Stack
+## Tech Stack
 - Front-end: React.js, MapBox
-- Back-end: Node.js, Flask
+- Back-end: Node.js, Express.js, Flask
 - Database: SQLite
 
 ## Key Features
